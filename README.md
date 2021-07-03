@@ -46,7 +46,7 @@ New District Summary with Changes:
 ![new](https://github.com/corispade/School_District_Analysis/blob/main/Resources/Thomas/thomas_district_summary.png)
 
 ### School Summary: 
-* The school district summary for Thomas High School when replacing the 9th grade math and reading scores with NaN was greatly affected. This reduction was caused because we are still calculating the grades based on total student count. Since the 9th grade count has been reduced, the passing percentages were reduced accordingly. This created inaccurate results:
+* The school district summary for Thomas High School when replacing the 9th grade math and reading scores with NaN was greatly affected. This reduction was caused because we are still calculating the grades based on total student count. Since the 9th grade count has been reduced, the passing percentages were reduced accordingly. This created inaccurate results (reference chart below):
   * The average math score reduced by 0.06. 
   * The average reading score increased by 0.05.
   * The % Passing Math reduced by 26.36%
@@ -55,14 +55,12 @@ New District Summary with Changes:
 
 ![wrong](https://github.com/corispade/School_District_Analysis/blob/main/Resources/Thomas/thomas_school_summary_wrong.png)
 
-* After correcting the DataFrame by updating the Thomas High School count to account for 10th, 11th and 12th graders only, the school summary for Thomas High School was only marginally affected:
+* After correcting the DataFrame by updating the Thomas High School count to account for 10th, 11th and 12th graders only, the school summary for Thomas High School was only marginally affected (reference chart below):
   * The average math score reduced by 0.06. 
   * The average reading score increased by 0.05.
   * The % Passing Math reduced by 0.09%
   * The % Passing Reading reduced by 0.29%
   * The % Overall Passing reduced by 0.31%
-
-Corrected School Summary DataFrame for reference:
 
 ![right](https://github.com/corispade/School_District_Analysis/blob/main/Resources/Thomas/thomas_school_summary.png)
 
@@ -75,25 +73,34 @@ Original Top 5 Performing Schools:
 
 ![original](https://github.com/corispade/School_District_Analysis/blob/main/Resources/original/top_5.png)
 
-New Top 5 Performing Schools:
+New Top 5 Performing Schools with Changes:
 
 ![new](https://github.com/corispade/School_District_Analysis/blob/main/Resources/Thomas/thomas_top_5.png)
 
 ### How does replacing the ninth-grade scores affect the following:
 
 * Math and reading scores by grade:
-  * 
+  * Replacing Thomas High School 9th grade math and reading scores with NaN only affects Thomas High School 9th graders. No other schools or grades are affected.
 
 * Scores by school spending:
-  * 
+  * Scores by school spending ranges were not affected by replacing Thomas High School 9th grade math and reading scores with NaN.
 
 * Scores by school size:
-  * 
+  * Scores by school size were not affected by replacing Thomas High School 9th grade math and reading scores with NaN.
 
 * Scores by school type:
-  * 
+  * Scores by school type were not affected by replacing Thomas High School 9th grade math and reading scores with NaN.
 
 # Summary: 
-Summarize four changes in the updated school district analysis after reading and math scores for the ninth grade at Thomas High School have been replaced with NaNs.
+Four changes in the updated school district analysis after Thomas High School 9th grade reading and math scores have been replaced with "NaN" values:
 
-It is difficult to come to a conclusion about academic dishonesty for Thomas High School 9th grade math and reading scores based on this analysis. When omitting the 9th grade scores, Thomas High School % passing math, % passing reading and % overall passing were reduced by <1%. This is not a large enough margin to 
+1. In the district summary, the Percent Overall Passing Reduced by 0.3%
+
+2. In the school summary, the Percent Overall Passing for Thomas High School reduced by 0.3%
+
+3. In the school summary for Thomas High School, the Average Math Score reduced by 0.06, but the Average Reading Score actually increased by 0.05.
+
+3. In the Top 5 school rankings, Thomas High School did not move in ranking, but the Percent Overall Passing reduced by 0.3% putting them closer to the #3 position
+
+
+It is difficult to come to a conclusion about academic dishonesty for Thomas High School 9th grade math and reading scores based on this analysis. When omitting the 9th grade scores, Thomas High School % passing math, % passing reading and % overall passing were reduced by <1%. This is not a large enough margin to determine academic dishonesty. Further tests will need to be implemented for a stronger conclusion. 

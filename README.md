@@ -31,7 +31,7 @@ After replacing Thomas High School 9th grade math and reading scores with "NaN" 
 
 ### District Summary: 
 * The District Summary was marginally affected: 
-  * The average math score reduced by 0.2. 
+  * The average math score reduced by 0.1. 
   * The average reading score did not change
   * The % Passing Math reduced by 0.2%
   * The % Passing Reading reduced by 0.1%

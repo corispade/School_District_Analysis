@@ -27,7 +27,7 @@ Environment: Jupyter Notebook
 # Results: 
 Find the completed School District Analysis [here](https://github.com/corispade/School_District_Analysis/blob/main/PyCitySchools_Challenge.ipynb) for reference.
 
-After replacing Thomas High School 9th grade math and reading scores, we found the following results: 
+After replacing Thomas High School 9th grade math and reading scores with "NaN" values, we found the following results: 
 
 ### District Summary: 
 * The District Summary was marginally affected: 
@@ -37,11 +37,11 @@ After replacing Thomas High School 9th grade math and reading scores, we found t
   * The % Passing Reading reduced by 0.1%
   * The % Overall Passing Reduced by 0.3%
 
-Original Summary:
+Original District Summary:
 
 ![original](https://github.com/corispade/School_District_Analysis/blob/main/Resources/original/district_summary.png)
 
-New Summary with Changes:
+New District Summary with Changes:
 
 ![new](https://github.com/corispade/School_District_Analysis/blob/main/Resources/Thomas/thomas_district_summary.png)
 
@@ -53,17 +53,31 @@ New Summary with Changes:
   * The % Passing Reading reduced by 27.64%
   * The % Overall Passing Reduced by 25.87%
 
-* After updating the Thomas High School count to account for 10th, 11th and 12th graders only, the school summary was for Thomas High School was only marginally affected:
+![wrong](https://github.com/corispade/School_District_Analysis/blob/main/Resources/Thomas/thomas_school_summary_wrong.png)
+
+* After correcting the DataFrame by updating the Thomas High School count to account for 10th, 11th and 12th graders only, the school summary for Thomas High School was only marginally affected:
   * The average math score reduced by 0.06. 
   * The average reading score increased by 0.05.
   * The % Passing Math reduced by 0.09%
   * The % Passing Reading reduced by 0.29%
   * The % Overall Passing reduced by 0.31%
 
+Corrected School Summary DataFrame for reference:
+
+![right](https://github.com/corispade/School_District_Analysis/blob/main/Resources/Thomas/thomas_school_summary.png)
+
 ### How does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools?
 * When replacing the 9th grade math and reading scores with NaN (while still accounting for the original total student count), Thomas High School drops out of the top 5 school ranking. Surprisingly, they still rank higher than the bottom 5 schools.
 
-* When replacing the 9th grade math and reading scores with Nan (updating the count to accomodate for 10th, 11th and 12th graders only), Thomas High School remained in the top 5 performing schools based on the overall passing percentage. Their #2 ranking did not change. 
+* When replacing the 9th grade math and reading scores with Nan (updating the count for 10th, 11th and 12th graders only), Thomas High School remained in the top 5 performing schools based on the overall passing percentage. Their #2 ranking did not change. 
+
+Original Top 5 Performing Schools:
+
+![original](https://github.com/corispade/School_District_Analysis/blob/main/Resources/original/top_5.png)
+
+New Top 5 Performing Schools:
+
+![new](https://github.com/corispade/School_District_Analysis/blob/main/Resources/Thomas/thomas_top_5.png)
 
 ### How does replacing the ninth-grade scores affect the following:
 
